@@ -1,0 +1,90 @@
+#container {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.msgBox {
+  width: 100%;
+  font-family: -apple-system, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.msgItem {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+.msgItemHeader {
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+  overflow: hidden;
+}
+.msgItemHeader .msgSender {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 5px;
+  font-size: 10pt;
+  font-weight: 600;
+}
+.msgItemHeader .msgTime {
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+  color: #bbb;
+  font-size: 8pt;
+  font-style: italic;
+}
+.msgItemInner {
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+}
+.msgItemInner .msgContent {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  font-size: 10pt;
+  line-height: 120%;
+}
+.msgItemInner .hasReadBtn {
+  display: block;
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 10pt;
+  background: rgba(0, 0, 0, .1);
+}
+.msgItemInner .hasReadBtn:link,
+.msgItemInner .hasReadBtn:visited {
+  color: #fff;
+}
+.msgItemInner .hasReadBtn:hover,
+.msgItemInner .hasReadBtn:focus {
+  background: #00f;
+  color: #fff;
+}
+
+.msgItemEnter {
+  right: -100%;
+}
+.msgItemEnterActive {
+  right: 0;
+  transition: all 300ms;
+}
+.msgItemLeave {
+  opacity: 1;
+}
+.msgItemLeaveActive {
+  opacity: 0.01;
+  transition: all 300ms;
+}
